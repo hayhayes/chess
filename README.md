@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chess game built with React & Redux 
 
-## Getting Started
+This is a fully functional chess game for two players ~ or one person playing themselves. The game does not allow for *special* moves such as castling, pawn promotion, and en passant. I may add logic for this in future updates.
+This game includes move validation, turn-based logic, and possible move highlighting.
 
-First, run the development server:
+## 🎯 Purpose
+This game was created for practice purposes. It only has React and Redux related packages installed.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Usage
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- press ➕ Reset to reset the board back to the starting position
+- press ↩️ the undo button to undo the last move
+- click on a piece and click the square you wish to move it too. All possible moves are shown on the board.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- ✅ Move validation for all pieces
+- ⚔️ Check and checkmate detection
+- ⭕ highlighting for all possible moves and captures
+- 🎲 a tracker to keep track of whose turn it is
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- React.js
+- Redux Toolkit
+- CSS# chess
