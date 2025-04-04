@@ -24,4 +24,4 @@ This game was created for practice purposes. It only has React and Redux related
 - React.js
 - Redux Toolkit
 - CSS# chess
-# chess
+
