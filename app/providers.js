@@ -1,0 +1,8 @@
+"use client"; // Ensure it's a client component
+
+import { Provider } from "react-redux";
+import { store } from "../store/store";
+
+export function Providers({ children }) {
+  return <Provider store={store}>{children}</Provider>;
+}

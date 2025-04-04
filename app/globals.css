@@ -1,42 +1,108 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.main{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 100px;
+  
+
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.game-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.turn-tracker{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14pt;
+  font-weight: 400;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+.turn-tracker span{
+  font-weight: 600;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+  background-color: #eeeed2;
+}
+
+.square{
+  display: flex;
+}
+
+.dark{
+  background-color: #769656;
+}
+
+
+
+
+.piece:hover{
+  cursor: pointer;
+}
+
+.move{
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  display: flex;
+  align-self: center;
+  margin: 17.5px auto;
+  background-color: #e3e3ca;
+  mix-blend-mode: multiply;
+}
+
+.capture{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border: 4px solid #e3e3ca;
+  mix-blend-mode: multiply;
+  border-radius: 50px;
+}
+
+.controls{
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: space-between;
+  padding: 20px 0px;
+  margin-top: 15px;
+}
+
+.button{
+  background-color: #99c276;
+  border-radius: 15px;
+  filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.338));
+  width: 100px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #6a884c;
+  font-weight: 500;
+}
+
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.button > img{
+  height:90%;
+  width: auto;
+  margin-right: 5px;
 }
